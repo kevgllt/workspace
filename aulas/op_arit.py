@@ -9,7 +9,7 @@
 
 
 # Ordem de Precedência
-
+# Prioridade
 # 1_ ()
 
 # 2_ **  _exponenciação
