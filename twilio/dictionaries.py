@@ -1,7 +1,5 @@
-# Criando objeto com propriedades
-
 super_hero = {
-    'name' : 'Miles Morales',
-    'hero_name' : 'Spider Man',
-    'power_level' : 9999
-}
+        'name' : 'Miles Morales',
+        'hero_name' : 'Spider-Man',
+        'power_level' : 9999
+        }
