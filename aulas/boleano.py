@@ -1,13 +1,22 @@
-#entrada = input("O dia está chuvoso?\nSim ou Não\n\nEntrada: ")
+entrada = input("Hoje está chovendo?\nSim ou Não\n: ")
 
-nome_usuario = input("Informe seu nome:\nEntrada: ")
-sobrenome_usuario = input("\nInforme seu sobrenome:\nEntrada: ")
+def verifica_chuva(arg):
+    if arg == 'S' or arg == 's' or arg == 'Sim' or arg == 'sim' or arg == 'SIM':
+        return True
+    elif arg == 'N' or arg == 'n' or arg == 'Nao' or arg == 'nao' or arg == 'NAO' or arg == 'Não' or arg == 'não' or arg == 'NÃO':
+        return False
+    else:
+        return None
+
+chuva_resultado = verifica_chuva(entrada)
+
+def mensagem_chuva(arg):
+    if arg:
+        return f"Sim, leve seu guarda-chuva."
+    elif arg == False:
+        return f"Não, Sol muito forte."
+    else:
+        return f"ops! valores não permitidos."
 
 
-def saudar_usuario(nome, sobrenome):
-    return f"\nBem-vindo mestre {nome} {sobrenome}"
-
-
-print(
-    saudar_usuario(nome_usuario, sobrenome_usuario)
-)
+print(f"{mensagem_chuva(chuva_resultado)}")
